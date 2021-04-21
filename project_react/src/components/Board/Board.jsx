@@ -6,14 +6,13 @@ import { Cell } from "../Cell";
 import "./Board.css";
 
 const Board = (props) => {
-  const { boardSize } = props;
+  const { boardSize, handleCellClick } = props;
 
   const style = {
-    border: "2px solid darkblue",
-    width: "inherit",
-    height: "inherit",
-    margin: "0 auto",
+    border: "3px solid darkblue",
+    margin: "0",
     display: "grid",
+    width: "100%",
     gridTemplate: `repeat(${boardSize}, 1fr) / repeat(${boardSize}, 1fr)`,
   };
 
@@ -23,7 +22,7 @@ const Board = (props) => {
         {Array(boardSize * boardSize)
           .fill(0)
           .map((_, i) => (
-            <Cell value={i} handleCellClick={(e) => console.log(e)} />
+            <Cell value={false} handleCellClick={handleCellClick} />
           ))}
       </div>
     </div>

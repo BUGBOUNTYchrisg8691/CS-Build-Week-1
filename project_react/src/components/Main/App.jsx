@@ -14,6 +14,10 @@ const App = () => {
     setBoardSize(value);
   };
 
+  const handleCellClick = (e, setter, value) => {
+    setter(!value);
+  };
+
   return (
     <div className="App">
       <h1>Conway's Game of Life</h1>
@@ -21,7 +25,7 @@ const App = () => {
         boardSize={boardSize}
         handleChangeSize={handleChangeSize}
       />
-      <Board boardSize={boardSize} />
+      <Board boardSize={boardSize} handleCellClick={handleCellClick} />
     </div>
   );
 };

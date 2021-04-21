@@ -1,9 +1,12 @@
 .board-container {
-  border: 1px solid red;
   padding: 10px;
   width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.board {
+  width: 100%;
 }
