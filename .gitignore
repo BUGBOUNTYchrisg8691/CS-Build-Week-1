@@ -3,7 +3,10 @@
 # dependencies
 **/node_modules
 
-# testing
+# build
+**/dist
+
+#App testing
 /coverage
 
 # production
@@ -124,7 +127,8 @@ ipython_config.py
 #   However, in case of collaboration, if having platform-specific dependencies or dependencies
 #   having no cross-platform support, pipenv may install dependencies that don't work, or not
 #   install all needed dependencies.
-#Pipfile.lock
+Pipfile.lock
+**/Pipfile.lock
 
 # poetry
 #poetry.lock
@@ -1140,3 +1144,5 @@ FodyWeavers.xsd
 
 # End of https://www.toptal.com/developers/gitignore/api/vim,jetbrains+all,intellij+all,pycharm+all,vscode,visualstudio,visualstudiocode,linux,zsh,git,python,venv,virtualenv,django,flask,react,node,less,sass
 
+# vscode
+**/.vscode

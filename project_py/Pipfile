@@ -7,6 +7,15 @@ name = "pypi"
 django = "*"
 djangorestframework = "*"
 pygame = "*"
+numpy = "*"
+matplotlib = "*"
+pynvim = "*"
+neovim = "*"
+jedi = "*"
+pylint = "*"
+isort = "*"
+black = "*"
+flake8 = "*"
 
 [dev-packages]
 
