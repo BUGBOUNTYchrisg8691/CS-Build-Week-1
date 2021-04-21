@@ -1,0 +1,21 @@
+.board-size-select-container {
+  /* border: 1px solid red; */
+  margin: 10px;
+  padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-size-select-container>h5 {
+  margin-right: 10px;
+}
+
+.board-size-select-container>select {
+  margin-left: 10px;
+  width: 5em;
+  height: 2em;
+  text-align-last: center;
+}

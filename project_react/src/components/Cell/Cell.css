@@ -1,0 +1,7 @@
+button {
+  background: lightblue;
+	border: 1px solid darkblue;
+	font-size: 10px;
+	cursor: pointer;
+	outline: none;
+}
