@@ -11,7 +11,7 @@ const Cell = (props) => {
   return (
     <button
       className={`${cellVal ? "cell-on" : "cell-off"}`}
-      onClick={(e) => handleCellClick(e, setCellVal, cellVal)}
+      onClick={() => handleCellClick(setCellVal, cellVal)}
     >
       {cellVal}
     </button>
