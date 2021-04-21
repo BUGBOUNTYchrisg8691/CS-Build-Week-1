@@ -6,7 +6,16 @@ import "./Cell.css";
 const Cell = (props) => {
   const { value, handleCellClick } = props;
 
-  return <button onClick={handleCellClick}>{value}</button>;
+  const [cellVal, setCellVal] = React.useState(value);
+
+  return (
+    <button
+      className={`${cellVal ? "cell-on" : "cell-off"}`}
+      onClick={(e) => handleCellClick(e, setCellVal, cellVal)}
+    >
+      {cellVal}
+    </button>
+  );
 };
 
 export default hot(module)(Cell);

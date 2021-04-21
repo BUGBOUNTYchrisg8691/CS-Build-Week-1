@@ -1,7 +1,16 @@
 button {
-  background: lightblue;
 	border: 1px solid darkblue;
-	font-size: 10px;
 	cursor: pointer;
 	outline: none;
+  padding-top: 100%;
+  min-width: 10px;
+  width:100%;
+}
+
+.cell-on {
+  background: white;
+}
+
+.cell-off {
+  background: black;
 }

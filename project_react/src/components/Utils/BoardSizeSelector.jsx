@@ -15,7 +15,7 @@ const BoardSizeSelector = (props) => {
         onChange={handleChangeSize}
         value={boardSize}
       >
-        {Array(100)
+        {Array(75)
           .fill(0)
           .map((_, i) => (
             <option id={`${i}-option`} value={i + 1}>
